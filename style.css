@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Mono&display=swap');
+
+/* Common styles for all devices */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./rps2.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 40% 25%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+}
+
+p {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+  font-weight: bold;
+}
+
+.container {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+button {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
+}
+
+button#scissors {
+  background-color: #FF9933;
+}
+
+button#rock {
+  background-color: #FF3366; /* Pink */
+}
+
+button#paper {
+  background-color: #66CCFF; /* Light Blue */
+}
+
+button#reset {
+  background-color: green;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  /* Styles for devices with a maximum width of 768px */
+  
+  .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  button {
+    width: 20%;
+  }
+  
+  #result {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+
+  
+  
